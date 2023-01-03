@@ -1,0 +1,38 @@
+MVC stands for Model-View-Controller. It is a software design pattern for developing web applications.
+
+The MVC pattern divides the  application into three main components:
+
+Model: This component represents the data of the application and the business logic. It handles the logic for retrieving and updating data from a database or other source.
+
+View: This component is responsible for displaying the data to the user. It is the user interface (UI) of the application.
+
+Controller: This component receives user input and sends commands to the model and view. It acts as a mediator between the model and view, updating the view when the model changes and updating the model when the user interacts with the view.
+
+Using the MVC pattern helps to keep the code organized and separation of concerns, making it easier to develop and maintain the application.
+
+
+- app/
+  - controllers/
+    - HomeController.php
+    - PostsController.php
+    - UsersController.php
+  - models/
+    - Post.php
+    - User.php
+  - views/
+    - home/
+      - index.php
+      - contact.php
+    - posts/
+      - index.php
+      - show.php
+    - users/
+      - index.php
+      - show.php
+  - autoload.php
+  - router.php
+- public/
+  - index.php
+  - css/
+  - js/
+  - images/
